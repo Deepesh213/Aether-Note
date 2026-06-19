@@ -70,8 +70,11 @@ export const CoverImageModal = () => {
             });
 
             onClose();
-            return res;
-        }   
+            return {
+              url: res.url
+            };
+        }
+        else throw new Error("No file provided");
     },
     [edgestore,coverImage.url, update, params.documentId,onClose],
   );
