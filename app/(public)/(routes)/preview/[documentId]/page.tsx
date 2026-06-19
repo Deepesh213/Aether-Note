@@ -63,13 +63,13 @@ const DocumentIdPage = ({
         <div className="flex flex-row-reverse p-2">
             <ModeToggle/>
         </div>
-        <Cover preview url={document.coverImage} />
+        <Cover preview url={document!.coverImage} />
         <div className="md:max-w-3xl lg:max-w-4xl mx-auto">
-            <Toolbar preview initialData={document} />
+            <Toolbar preview initialData={document!} />
             <Editor
                 editable={false}
                 onChange={onChange}
-                initialContent={document.content}
+                initialContent={document!.content}
             
             />
         </div>
