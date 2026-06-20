@@ -79,7 +79,7 @@ export const Toolbar = ({
     }
 
     return (
-        <div className="z-[99999] pl-[54px] group relative">
+        <div className="z-0 pl-[54px] group relative">
             {!!initialData.icon && !preview && (
                 <div className="flex items-center gap-x-2 group/icon pt-6">
                     <IconPicker onChange={onIconSelect}>
@@ -135,7 +135,7 @@ export const Toolbar = ({
                     onKeyDown={onKeyDown}
                     value={value}
                     onChange={(e) => onInput(e.target.value)}
-                    className="mb-8 text-5xl bg-transparent font-bold wrap-break-word outline-none text-[#3F3F3F] dark:text-[#CFCFCF] resize-none"
+                    className="mb-8 text-5xl font-bold wrap-break-word outline-none text-[#3F3F3F] dark:text-[#CFCFCF] resize-none "
                 />
             ) : (
                 <div

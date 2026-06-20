@@ -10,8 +10,9 @@ import Link from "next/link";
 export const Heading = () => {
     return ( 
         <div className="max-w-2xl space-y-4">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">
-                Your workflow, unified in one fluid workspace <span className="underline italic">Aether Note</span>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold underline italic">Aether Note</h1>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-medium">
+                Your workflow, unified in one fluid workspace 
             </h1>
             <h3 className="text-base sm:text-xl md:text-2xl font-medium ">
                 A minimalist workspace that adapts to you.<br/> Build flexible layouts, nest pages endlessly, and organize your thoughts without constraints

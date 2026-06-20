@@ -27,7 +27,7 @@ const MainLayout = ({
     return ( 
         <div className="h-full flex dark:bg-[#0D0D0D]">
             <Navigation/>
-            <main className="flex-1 h-full mt-12 overflow-y-auto ">
+            <main className="flex-1 h-full pt-12 overflow-y-auto ">
                 <SearchCommand />
                 {children}
             </main>

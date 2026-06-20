@@ -57,7 +57,9 @@ const Editor = ({
                 theme={resolvedTheme === "dark" ? "dark" : "light"}
                 
             >
-                               
+                {/* <div className="flex justify-center items-center">
+                    <FormattingToolbar />
+                </div> */}
             </BlockNoteView>
             
         </div>

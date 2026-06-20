@@ -11,6 +11,22 @@ body,
   height:100%;
 }
 
+.bn-container {
+  gap: 8px;
+
+}
+
+.bn-formatting-toolbar {
+  margin-inline: auto;
+  position:absolute;
+  overflow-x:visible !important;
+  top:40px;
+  left:20px;
+}
+
+
+
+
 
 
 @theme inline {
