@@ -17,6 +17,7 @@ import "@blocknote/core/style.css";
 
 import { useEdgeStore } from "@/lib/edgestore";
 import { cn } from "@/lib/utils";
+import { useMediaQuery } from "usehooks-ts";
 
 interface EditorProps {
     onChange: (value: string) => void;
@@ -29,6 +30,7 @@ const Editor = ({
     initialContent,
     editable
 }: EditorProps) => {
+    const isMobile = useMediaQuery("(max-width: 768px)")
     const { resolvedTheme } = useTheme();
     const { edgestore } = useEdgeStore();
 
@@ -55,11 +57,11 @@ const Editor = ({
                 }}
                 editor={editor}
                 theme={resolvedTheme === "dark" ? "dark" : "light"}
-                
+                formattingToolbar={isMobile?false:true}
             >
-                {/* <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center">
                     <FormattingToolbar />
-                </div> */}
+                </div>
             </BlockNoteView>
             
         </div>

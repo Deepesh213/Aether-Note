@@ -13,15 +13,16 @@ body,
 
 .bn-container {
   gap: 8px;
-
+  display:flex;
+  flex-direction:column-reverse;
+  
 }
 
 .bn-formatting-toolbar {
   margin-inline: auto;
   position:absolute;
+  top:50px;
   overflow-x:visible !important;
-  top:40px;
-  left:20px;
 }
 
 
